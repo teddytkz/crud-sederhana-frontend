@@ -4,9 +4,9 @@
 - Node.Js
 
 ** Package **
-- Express
-- Mysql
-- Sequelize
+- React Js
+- Bulma CSS
+- Axios
 
 ** Backend **
 https://github.com/teddytkz/crud-sederhana-backend
