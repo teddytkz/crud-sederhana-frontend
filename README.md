@@ -9,7 +9,7 @@
 - Axios
 
 ** Backend **
-https://github.com/teddytkz/crud-sederhana-backend
+- https://github.com/teddytkz/crud-sederhana-backend
 
 ### First Init
 Install Requirement
