@@ -1,4 +1,4 @@
-# CRUD Sederhana Backend
+# CRUD Sederhana Frontend
 
 ** Utama **
 - Node.Js
