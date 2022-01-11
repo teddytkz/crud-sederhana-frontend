@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import PelangganList from './components/PelangganList'
+import PelangganAdd from './components/PelangganAdd'
+import PelangganEdit from './components/PelangganEdit'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='container'>
+        <div className="columns">
+          <div className="column is-half is-offset-one-quarter">
+            <Switch>
+              <Route exact path='/'>
+                <PelangganList />
+              </Route>
+              <Route path='/add'>
+                <PelangganAdd />
+              </Route>
+              <Route path='/edit/:id'>
+                <PelangganEdit />
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </div>
+    </Router>
   );
 }
 
